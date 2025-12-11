@@ -1,5 +1,41 @@
 # 🛡️ Absher Raqeeb AI - نظام كشف الاحتيال متعدد الطبقات
 
+<div dir="ltr">
+
+## English Summary
+
+**Absher Raqeeb AI** is a multi-layer fraud detection system for government platforms that combines behavioral analysis, AI/ML models, sequence pattern detection, and graph-based network analysis to detect fraud attempts in real-time.
+
+### Key Features
+
+- **4 Integrated Layers**: Behavioral, AI/ML, Sequence, and Graph Risk
+- **3 ML Models**: RandomForest (98.88% accuracy), IsolationForest, Neural Network (96.25% accuracy)
+- **Interactive Graph Visualization**: D3.js force-directed graph
+- **Real-time Evaluation**: Instant results with clear explanations
+- **Comprehensive Dashboard**: Detailed risk breakdown, analytics, and database view
+
+### Quick Start
+
+```bash
+# Backend
+python -m venv venv
+source venv/bin/activate
+pip install flask numpy scikit-learn joblib
+python train_model.py
+python app.py
+
+# Frontend
+cd frontend
+npm install
+npm run dev
+```
+
+For detailed documentation, see [LAYERS_DETAILED_EXPLANATION.md](./LAYERS_DETAILED_EXPLANATION.md).
+
+</div>
+
+---
+
 ## 📋 نظرة عامة
 
 **Absher Raqeeb AI** هو نظام متقدم لكشف الاحتيال في المنصات الحكومية يستخدم نهجاً متعدد الطبقات يجمع بين تحليل السلوك، نماذج الذكاء الاصطناعي، تحليل تسلسل الجلسة، والرسم الشبكي للكشف عن محاولات الاحتيال في الوقت الفعلي.
@@ -22,8 +58,6 @@
 - 📊 **لوحة تحكم شاملة**: عرض تفصيلي للمخاطر، التحليلات، وقاعدة البيانات
 
 - ⚡ **تقييم في الوقت الفعلي**: نتائج فورية مع تفسيرات واضحة
-
-</div>
 
 ---
 
@@ -527,42 +561,6 @@ request = {
 
 هذا المشروع مرخص تحت [MIT License](LICENSE).
 
-
----
-
-<div dir="ltr">
-
-## English Summary
-
-**Absher Raqeeb AI** is a multi-layer fraud detection system for government platforms that combines behavioral analysis, AI/ML models, sequence pattern detection, and graph-based network analysis to detect fraud attempts in real-time.
-
-### Key Features
-
-- **4 Integrated Layers**: Behavioral, AI/ML, Sequence, and Graph Risk
-- **3 ML Models**: RandomForest (98.88% accuracy), IsolationForest, Neural Network (96.25% accuracy)
-- **Interactive Graph Visualization**: D3.js force-directed graph
-- **Real-time Evaluation**: Instant results with clear explanations
-- **Comprehensive Dashboard**: Detailed risk breakdown, analytics, and database view
-
-### Quick Start
-
-```bash
-# Backend
-python -m venv venv
-source venv/bin/activate
-pip install flask numpy scikit-learn joblib
-python train_model.py
-python app.py
-
-# Frontend
-cd frontend
-npm install
-npm run dev
-```
-
-For detailed documentation, see [LAYERS_DETAILED_EXPLANATION.md](./LAYERS_DETAILED_EXPLANATION.md).
-
-</div>
 
 ---
 
