@@ -1,7 +1,5 @@
 # 🛡️ Absher Raqeeb AI - نظام كشف الاحتيال متعدد الطبقات
 
-<div dir="rtl">
-
 ## 📋 نظرة عامة
 
 **Absher Raqeeb AI** هو نظام متقدم لكشف الاحتيال في المنصات الحكومية يستخدم نهجاً متعدد الطبقات يجمع بين تحليل السلوك، نماذج الذكاء الاصطناعي، تحليل تسلسل الجلسة، والرسم الشبكي للكشف عن محاولات الاحتيال في الوقت الفعلي.
@@ -536,7 +534,7 @@ request = {
 
 ## English Summary
 
-**Absher Foresight AI** is a multi-layer fraud detection system for government platforms that combines behavioral analysis, AI/ML models, sequence pattern detection, and graph-based network analysis to detect fraud attempts in real-time.
+**Absher Raqeeb AI** is a multi-layer fraud detection system for government platforms that combines behavioral analysis, AI/ML models, sequence pattern detection, and graph-based network analysis to detect fraud attempts in real-time.
 
 ### Key Features
 
