@@ -1,130 +1,137 @@
-# 🛡️ Absher Raqeeb AI - نظام كشف الاحتيال متعدد الطبقات
-https://drive.google.com/file/d/15HCAuWhfzSLYWMd_2UO5S06kiTvHpQc2/view?usp=sharing
-<div dir="ltr">
+# 🛡️ Absher Raqeeb AI - رقيب أبشر
 
-## English Summary
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![React 19](https://img.shields.io/badge/react-19-blue.svg)](https://reactjs.org/)
+[![Hackathon Project](https://img.shields.io/badge/project-hackathon_mvp-orange.svg)]()
 
-**Absher Raqeeb AI** is a multi-layer fraud detection system for government platforms that combines behavioral analysis, AI/ML models, sequence pattern detection, and graph-based network analysis to detect fraud attempts in real-time.
+> **⚠️ Hackathon MVP Notice**: This is a proof-of-concept (PoC) developed for a hackathon to demonstrate a novel approach to fraud detection in government platforms. It uses synthetic data and is not intended for production use without significant enhancements.
 
-### Key Features
+**Absher Raqeeb AI** is a sophisticated multi-layer fraud detection system designed for government platforms. It combines behavioral analysis, AI/ML models, sequence pattern detection, and graph-based network analysis to detect fraudulent transactions in real-time.
 
-- **4 Integrated Layers**: Behavioral, AI/ML, Sequence, and Graph Risk
-- **3 ML Models**: RandomForest (98.88% accuracy), IsolationForest, Neural Network (96.25% accuracy)
-- **Interactive Graph Visualization**: D3.js force-directed graph
-- **Real-time Evaluation**: Instant results with clear explanations
-- **Comprehensive Dashboard**: Detailed risk breakdown, analytics, and database view
+## 🎥 Demo
 
-### Quick Start
+**[Watch Live Demo Video](https://drive.google.com/file/d/15HCAuWhfzSLYWMd_2UO5S06kiTvHpQc2/view?usp=sharing)**
 
-```bash
-# Backend
-python -m venv venv
-source venv/bin/activate
-pip install flask numpy scikit-learn joblib
-python train_model.py
-python app.py
-
-# Frontend
-cd frontend
-npm install
-npm run dev
-```
-
-For detailed documentation, see [LAYERS_DETAILED_EXPLANATION.md](./LAYERS_DETAILED_EXPLANATION.md).
-
-</div>
+See the system in action: real-time risk assessment, interactive graph visualization, and comprehensive fraud detection across all four layers.
 
 ---
 
-## 📋 نظرة عامة
+## 🎯 Project Context
 
-**Absher Raqeeb AI** هو نظام متقدم لكشف الاحتيال في المنصات الحكومية يستخدم نهجاً متعدد الطبقات يجمع بين تحليل السلوك، نماذج الذكاء الاصطناعي، تحليل تسلسل الجلسة، والرسم الشبكي للكشف عن محاولات الاحتيال في الوقت الفعلي.
+### Hackathon MVP
 
-### ✨ الميزات الرئيسية
+This project was developed as a **Minimum Viable Product (MVP)** for a hackathon with the following goals:
 
-- 🔍 **4 طبقات متكاملة** لتقييم المخاطر:
-  - **Behavioral Risk**: تحليل السلوك الفوري (0-50 نقطة)
-  - **AI/ML Risk**: 3 نماذج ML مكملة (0-40 نقطة)
-  - **Sequence Risk**: تحليل أنماط الجلسة (0-30 نقطة)
-  - **Graph Risk**: تحليل الشبكات والارتباطات (0-50 نقطة)
+- ✅ **Demonstrate feasibility** of a 4-layer fraud detection architecture
+- ✅ **Prove concept** of combining traditional ML with graph-based intelligence
+- ✅ **Showcase innovation** in sequence pattern analysis for bot detection
+- ✅ **Validate approach** using synthetic but realistic data
 
-- 🤖 **نماذج ML متقدمة**:
-  - RandomForest Classifier (98.88% دقة)
-  - IsolationForest (كشف شذوذ غير إشرافي)
-  - MLP Neural Network (96.25% دقة)
+### What This IS
 
-- 🕸️ **رسم شبكي تفاعلي**: تصور ارتباطات IPs، Devices، وDocument Hashes
+- ✅ A working proof-of-concept with real ML models
+- ✅ An innovative architecture for fraud detection
+- ✅ A demonstration of advanced cybersecurity concepts
+- ✅ A foundation for future production development
 
-- 📊 **لوحة تحكم شاملة**: عرض تفصيلي للمخاطر، التحليلات، وقاعدة البيانات
+### What This IS NOT
 
-- ⚡ **تقييم في الوقت الفعلي**: نتائج فورية مع تفسيرات واضحة
+- ❌ Production-ready software
+- ❌ Trained on real fraud data
+- ❌ Fully optimized or hardened
+- ❌ An official Absher platform product
 
 ---
 
-## 🏗️ البنية التقنية
+## 📋 Overview
+
+Absher Raqeeb (رقيب أبشر - "Absher Watchman") is an advanced security intelligence platform that protects government services from fraud through a unique 4-layer architecture:
+
+### ✨ Key Features
+
+- 🔍 **4 Integrated Risk Layers**:
+  - **Behavioral Risk**: Immediate behavior analysis (0-50 points)
+  - **AI/ML Risk**: 3 complementary ML models (0-40 points)
+  - **Sequence Risk**: Session pattern analysis (0-30 points)
+  - **Graph Risk**: Network & connection analysis (0-50 points)
+
+- 🤖 **Advanced ML Models**:
+  - RandomForest Classifier (98.88% accuracy on synthetic data)
+  - IsolationForest (unsupervised anomaly detection)
+  - MLP Neural Network (96.25% accuracy on synthetic data)
+
+- 🕸️ **Interactive Graph Visualization**: Visualize connections between IPs, devices, and document hashes using D3.js force-directed graphs
+
+- 📊 **Comprehensive Dashboard**: Detailed risk breakdown, analytics, real-time transaction feed, and database view
+
+- ⚡ **Real-time Evaluation**: Instant results with clear, actionable explanations in both English and Arabic
+
+- 🌐 **Bilingual Support**: Full RTL support with Arabic explanations for Saudi Arabian government services
+
+---
+
+## 🏗️ Technology Stack
 
 ### Backend
-- **Flask** - إطار عمل Python للـ API
-- **scikit-learn** - نماذج ML (RandomForest, IsolationForest, MLPClassifier)
-- **NumPy** - معالجة البيانات
-- **Joblib** - حفظ وتحميل النماذج
+- **Flask** - Python web framework for API
+- **scikit-learn** - ML models (RandomForest, IsolationForest, MLPClassifier)
+- **NumPy** - Data processing
+- **Joblib** - Model persistence
 
 ### Frontend
-- **React 19** - مكتبة UI
+- **React 19** - UI library
 - **Vite** - Build tool
-- **Tailwind CSS** - تصميم الواجهة
-- **D3.js** - رسم شبكي تفاعلي
-- **Recharts** - رسوم بيانية
-- **Lucide React** - أيقونات
+- **Tailwind CSS** - Styling
+- **D3.js** - Interactive graph visualization
+- **Recharts** - Data visualization charts
+- **Lucide React** - Icon library
 
 ---
 
-## 📦 التثبيت
+## 📦 Installation
 
-### المتطلبات
+### Prerequisites
 - Python 3.8+
 - Node.js 18+
-- npm أو yarn
+- npm or yarn
 
-### خطوات التثبيت
+### Setup Instructions
 
-#### 1. استنساخ المشروع
+#### 1. Clone the Repository
 ```bash
 git clone <repository-url>
-cd absher-foresight-ai
+cd absher-raqeeb-ai
 ```
 
-#### 2. إعداد Backend
-
+#### 2. Backend Setup
 ```bash
-# إنشاء بيئة افتراضية
+# Create virtual environment
 python -m venv venv
 
-# تفعيل البيئة الافتراضية
-# على macOS/Linux:
+# Activate virtual environment
+# On macOS/Linux:
 source venv/bin/activate
-# على Windows:
+# On Windows:
 venv\Scripts\activate
 
-# تثبيت المكتبات
+# Install dependencies
 pip install flask numpy scikit-learn joblib
 ```
 
-#### 3. تدريب النماذج
-
+#### 3. Train ML Models
 ```bash
-# تشغيل سكربت التدريب
+# Run training script (generates synthetic data and trains models)
 python train_model.py
 ```
 
-سيتم إنشاء النماذج في مجلد `models/`:
+This will create models in the `models/` directory:
 - `security_risk_model.pkl` (RandomForest)
 - `isolation_forest_model.pkl` (IsolationForest)
 - `neural_network_model.pkl` (MLPClassifier)
 - `scaler.pkl` (StandardScaler)
 
-#### 4. إعداد Frontend
-
+#### 4. Frontend Setup
 ```bash
 cd frontend
 npm install
@@ -132,37 +139,35 @@ npm install
 
 ---
 
-## 🚀 التشغيل
+## 🚀 Running the Application
 
-### 1. تشغيل Backend
-
+### 1. Start Backend Server
 ```bash
+# Activate virtual environment
 source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate     # Windows
 
-venv\Scripts\activate  # Windows
-
+# Run Flask server
 python app.py
 ```
 
-الخادم سيعمل على `http://localhost:5000`
+Server will run on `http://localhost:5000`
 
-### 2. تشغيل Frontend
-
+### 2. Start Frontend
 ```bash
 cd frontend
 npm run dev
 ```
 
-التطبيق سيكون متاحاً على `http://localhost:5173`
+Application will be available at `http://localhost:5173`
 
 ---
 
-## 📖 الاستخدام
+## 📖 Usage
 
-### تقييم معاملة
+### Evaluate a Transaction
 
-أرسل POST request إلى `/evaluate`:
-
+Send a POST request to `/evaluate`:
 ```json
 {
   "user_id": "U1",
@@ -178,8 +183,7 @@ npm run dev
 }
 ```
 
-### الاستجابة
-
+### Response
 ```json
 {
   "behavior_risk": 50,
@@ -187,224 +191,184 @@ npm run dev
   "sequence_risk": 16,
   "graph_risk": 42,
   "total_risk": 100,
-  "decision": "BLOCK_REVIEW",
+  "decision": "BLOCK",
   "reasons": ["new_device", "big_location_jump", ...],
-  "reason_details": ["تم تنفيذ العملية من جهاز جديد...", ...]
+  "reason_details": ["Operation from new device...", ...]
 }
 ```
 
-### القرارات (Decisions)
+### Decision Types
 
-- **ALLOW** (0-30 نقطة): السماح بالمعاملة
-- **ALERT** (31-60 نقطة): تنبيه للمراقبة
-- **CHALLENGE** (61-80 نقطة): طلب تحقق إضافي
-- **BLOCK_REVIEW** (81-100 نقطة): حظر وتحويل للمراجعة
-
----
-
-## 🔬 الطبقات الأربع - شرح تفصيلي
-
-### 1️⃣ Behavioral Risk (مخاطر السلوك)
-
-**النطاق**: 0-50 نقطة
-
-**ما تكتشفه**:
-- جهاز جديد لم يُستخدم من قبل
-- قفزة جغرافية كبيرة (>500 كم)
-- وقت غير معتاد (2-5 صباحاً)
-- ضغط عمليات عالي (>8 عمليات في 24 ساعة)
-- طلب خدمة حساسة
-
-**كيف تعمل**:
-- تحسب عدد "الإشارات الحمراء" لتحديد السياق
-- نفس الإشارة لها وزن مختلف حسب وجود إشارات أخرى
-- مثال: جهاز جديد فقط = 12 نقطة، جهاز جديد + خدمة حساسة = 18 نقطة
-
-**مثال**:
-```python
-# جهاز جديد + قفزة موقع + وقت غير معتاد + خدمة حساسة
-red_flags = 4
-risk = 20 (new device) + 20 (location jump) + 12 (unusual time) + 12 (sensitive)
-     = 64 → محدود بـ 50 نقطة ✅
-```
+| Risk Range | Decision | Description |
+|------------|----------|-------------|
+| 0-30 | ALLOW | Allow transaction |
+| 31-60 | ALERT | Alert for monitoring |
+| 61-80 | CHALLENGE | Request additional verification |
+| 81-100 | BLOCK | Block and review |
 
 ---
 
-### 2️⃣ AI/ML Risk (نماذج الذكاء الاصطناعي)
+## 🔬 The Four Layers - Detailed Explanation
 
-**النطاق**: 0-40 نقطة
+### 1️⃣ Behavioral Risk Layer (0-50 points)
 
-**النماذج المستخدمة**:
+Analyzes immediate behavioral signals:
+- **New/unknown device** (+25 points)
+- **Large location change** (>500 km) (+20 points)
+- **Unusual access time** (2-5 AM) (+15 points)
+- **High operation frequency** (>5 ops in 24h) (+10 points)
+- **Sensitive service request** (+20 points)
 
-#### **RandomForest Classifier** (إشرافي)
-- **دقة**: 98.88%
-- **كيف يعمل**: 150 شجرة قرار تصوّت، النتيجة = الأغلبية
-- **المساهمة**: 0-25 نقطة (احتمال المخاطرة × 25)
+**Why it works**: Combines multiple weak signals into a strong indicator of suspicious behavior.
 
-#### **IsolationForest** (غير إشرافي)
-- **كيف يعمل**: يكتشف الشذوذ بناءً على العزلة
-- **المساهمة**: 0-25 نقطة (درجة الشذوذ × 80)
+---
 
-#### **MLP Neural Network** (شبكة عصبية)
-- **دقة**: 96.25%
-- **البنية**: 32 → 16 → 8 خلايا عصبية
-- **المساهمة**: 0-25 نقطة (احتمال المخاطرة × 25)
+### 2️⃣ AI/ML Risk Layer (0-40 points)
 
-**التجميع**:
+Employs three complementary ML models:
+
+#### **RandomForest Classifier** (Supervised)
+- **Accuracy**: 98.88% on synthetic training data
+- **How it works**: 150 decision trees vote on risk probability
+- **Contribution**: 0-25 points (probability × 25)
+
+#### **IsolationForest** (Unsupervised)
+- **How it works**: Detects anomalies by isolation principle
+- **Contribution**: 0-25 points (anomaly score × 80)
+
+#### **MLP Neural Network** (Deep Learning)
+- **Accuracy**: 96.25% on synthetic training data
+- **Architecture**: 32 → 16 → 8 neurons with ReLU activation
+- **Contribution**: 0-25 points (probability × 25)
+
+**Ensemble Result**:
 ```python
 total_ai_risk = min(rf_risk + iso_risk + nn_risk, 40)
 ```
 
-**Behavioral Boost**:
-- إذا 3+ إشارات سلوكية + AI risk < 20 → نضيف 5-10 نقاط
-- يضمن مساهمة AI حتى في الحالات المحافظة
+**8 Input Features**:
+1. `device_is_known` (0/1)
+2. `location_change_km` (0-2000)
+3. `hour_of_day` (0-23)
+4. `ops_last_24h` (0-20)
+5. `is_sensitive_service` (0/1)
+6. `session_length` (1-10)
+7. `sensitive_count` (0-3)
+8. `repeated_flag` (0/1)
 
-**مثال**:
+---
+
+### 3️⃣ Sequence Risk Layer (0-30 points)
+
+Detects suspicious session patterns:
+
+1. **Repeated login/payment attempts** (+5 points)
+   - 3+ logins or 2+ payments = credential stuffing
+
+2. **Multiple sensitive services** (+8 points)
+   - 2+ sensitive actions in one session
+
+3. **Sensitive action too early** (+15 points)
+   - login → sensitive_service directly (bot-like)
+
+4. **Long session** (+8 points)
+   - 7+ steps = reconnaissance pattern
+
+5. **Pattern drift** (+10 points)
+   - Deviation from user's normal behavior
+
+**Example**:
 ```python
-rf_risk = 23 (0.95 probability)
-iso_risk = 25 (anomaly detected)
-nn_risk = 25 (1.0 probability)
-total = 73 → محدود بـ 40 نقطة ✅
+seq = ["login", "renew_passport", "payment"]
+# Sensitive too early = 15 points
+# Total = 15 points ✅
 ```
 
 ---
 
-### 3️⃣ Sequence Risk (تحليل تسلسل الجلسة)
+### 4️⃣ Graph Risk Layer (0-50 points)
 
-**النطاق**: 0-30 نقطة
+Analyzes connections to known fraud cases:
 
-**الأنماط المكتشفة**:
+- **IP shared with fraud** (+10 per case, max 30)
+- **Device linked to fraud** (+12 per case, max 35)
+- **Document hash reused** (+8 per case, max 25)
+- **Sequence similarity** (+5 if >60% similar to fraud patterns)
 
-1. **تكرار login/payment** (8 نقاط)
-   - 3+ login أو 2+ payment = brute-force
-
-2. **OTP Abuse** (6 نقاط)
-   - 3+ محاولات OTP = misuse
-
-3. **خدمات حساسة متعددة** (8 نقاط)
-   - 2+ خدمات حساسة في جلسة واحدة
-
-4. **وصول سريع لخدمة حساسة** (10 نقاط)
-   - login → خدمة حساسة مباشرة (بدون تصفح)
-
-5. **جلسة طويلة** (4 نقاط)
-   - 7+ خطوات
-
-6. **مسار خطي بدون استكشاف** (7 نقاط)
-   - يشبه bot behavior
-
-**مثال**:
+**Example**:
 ```python
-seq = ["login", "renew_id", "verify_otp", "verify_otp", "verify_otp"]
-# OTP abuse (3) = 6 نقاط
-# Sensitive too early = 10 نقاط
-# Total = 16 نقطة ✅
+# IP used in 2 fraud cases
+ip_risk = 10 * 2 = 20 points
+
+# Device linked to 1 fraud case
+device_risk = 12 * 1 = 12 points
+
+# Sequence 85% similar to known fraud
+similarity_bonus = 5 points
+
+total = 20 + 12 + 5 = 37 points ✅
 ```
 
 ---
 
-### 4️⃣ Graph Risk (الرسم الشبكي والارتباطات)
+## 📊 ML Models & Training
 
-**النطاق**: 0-50 نقطة
+### Training Data
 
-**ما تكتشفه**:
-- IP شارك في معاملات احتيال مؤكدة
-- Device مرتبط باحتيال مؤكد
-- Document Hash مستخدم في احتيال مؤكد
-- مسار الجلسة يشبه مسارات احتيال سابقة
+- **4,000 synthetic samples** (3,200 training + 800 test)
+- **Generated using rule-based logic** to simulate realistic fraud scenarios
+- **Balanced dataset** with proper class weighting
+- **Note**: In production, this would be replaced with real historical fraud data
 
-**الحسابات**:
-```python
-# IP: 12 نقطة لكل حالة احتيال (محدود بـ 35)
-# Device: 18 نقطة لكل حالة احتيال (محدود بـ 40)
-# Doc: 12 نقطة لكل حالة احتيال (محدود بـ 30)
-# Sequence Similarity: +8 نقاط إذا التشابه >= 60%
-```
+### Model Performance (on Synthetic Data)
 
-**مثال**:
-```python
-# IP شارك في 2 حالات احتيال
-ip_risk = 12 * 2 = 24 نقطة
-
-# Device شارك في 1 حالة احتيال
-device_risk = 18 * 1 = 18 نقطة
-
-# Doc شارك في 3 حالات احتيال
-doc_risk = 12 * 3 = 30 نقطة (محدود)
-
-# Sequence similarity = 85%
-similarity_bonus = 8 نقاط
-
-total = 24 + 18 + 30 + 8 = 80 → محدود بـ 50 نقطة ✅
-```
-
----
-
-## 📊 النماذج والتدريب
-
-### بيانات التدريب
-
-- **4,000 عينة** (3,200 تدريب + 800 اختبار)
-- **بيانات مصطنعة** مبنية على سيناريوهات واقعية
-- **8 خصائص**:
-  1. `device_is_known` (0/1)
-  2. `location_change_km` (0-2000)
-  3. `hour_of_day` (0-23)
-  4. `ops_last_24h` (0-20)
-  5. `is_sensitive_service` (0/1)
-  6. `session_length` (1-10)
-  7. `sensitive_count` (0-3)
-  8. `repeated_flag` (0/1)
-
-### أداء النماذج
-
-| النموذج | الدقة | Precision | Recall | F1-Score |
-|---------|-------|-----------|--------|----------|
+| Model | Accuracy | Precision | Recall | F1-Score |
+|-------|----------|-----------|--------|----------|
 | RandomForest | 98.88% | 0.997 | 0.989 | 0.993 |
 | Neural Network | 96.25% | 0.970 | 0.985 | 0.977 |
-| IsolationForest | - | - | - | - |
+| IsolationForest | Unsupervised | - | - | - |
+
+> **Note**: These metrics are on synthetic data. Real-world performance would need validation on actual fraud cases.
 
 ---
 
-## 🕸️ الرسم الشبكي (Graph Visualization)
+## 🕸️ Graph Visualization
 
-### الميزات
+### Features
 
-- **عقد (Nodes)**: IPs، Devices، Document Hashes
-- **روابط (Links)**: ارتباطات بين Assets
-- **أحجام ديناميكية**: حسب عدد حالات الاحتيال
-- **ألوان مميزة**: حسب نوع الـ Asset
-- **تفاعلي**: يمكن السحب والتحريك
+- **Interactive D3.js force-directed graph**
+- **Nodes**: IPs, devices, document hashes
+- **Edges**: Connections between assets
+- **Color-coded**: By asset type and risk level
+- **Draggable**: Pan, zoom, and explore connections
 
-### كيفية الاستخدام
+### How to Use
 
-1. افتح تبويب "خريطة الارتباطات (Graph Network)"
-2. اضغط "تحديث خريطة الارتباطات"
-3. استخدم الماوس للسحب والتحريك
+1. Navigate to "Graph Visualization" tab
+2. Click "Update Graph"
+3. Drag nodes to explore connections
+4. Hover for details
 
 ---
 
-## 📁 هيكل المشروع
-
+## 📁 Project Structure
 ```
-absher-foresight-ai/
-├── app.py                      # Flask backend
-├── train_model.py              # تدريب النماذج
-├── models/                     # النماذج المدربة
+absher-raqeeb-ai/
+├── app.py                          # Flask backend API
+├── train_model.py                  # ML model training script
+├── models/                         # Trained ML models
 │   ├── security_risk_model.pkl
 │   ├── isolation_forest_model.pkl
 │   ├── neural_network_model.pkl
 │   └── scaler.pkl
 ├── frontend/
 │   ├── src/
-│   │   ├── App.jsx            # المكون الرئيسي
+│   │   ├── App.jsx                # Main React component
 │   │   └── ...
 │   ├── package.json
 │   └── ...
-├── LAYERS_DETAILED_EXPLANATION.md  # شرح تفصيلي للطبقات
-├── TECHNICAL_REVIEW.md        # مراجعة تقنية
-├── TECHNICAL_HIGHLIGHTS.md    # نقاط قوة تقنية
-└── TEST_SCENARIOS.md          # سيناريوهات اختبار
+├── LICENSE                         # MIT License
+└── README.md                       # This file
 ```
 
 ---
@@ -413,7 +377,7 @@ absher-foresight-ai/
 
 ### `POST /evaluate`
 
-تقييم معاملة جديدة.
+Evaluate a new transaction for fraud risk.
 
 **Request Body**:
 ```json
@@ -424,7 +388,7 @@ absher-foresight-ai/
   "hour_of_day": number,
   "ops_last_24h": number,
   "is_sensitive_service": boolean,
-  "session_sequence": array,
+  "session_sequence": ["string"],
   "ip_address": "string",
   "device_id": "string",
   "doc_hash": "string"
@@ -439,15 +403,17 @@ absher-foresight-ai/
   "sequence_risk": number,
   "graph_risk": number,
   "total_risk": number,
-  "decision": "string",
-  "reasons": array,
-  "reason_details": array
+  "decision": "ALLOW|ALERT|CHALLENGE|BLOCK",
+  "reasons": ["string"],
+  "reason_details": ["string"]
 }
 ```
 
+---
+
 ### `POST /confirm-fraud`
 
-تسجيل حالة احتيال مؤكدة.
+Register a confirmed fraud case for graph learning.
 
 **Request Body**:
 ```json
@@ -455,114 +421,232 @@ absher-foresight-ai/
   "ip_address": "string",
   "device_id": "string",
   "doc_hash": "string",
-  "session_sequence": array
+  "session_sequence": ["string"]
 }
 ```
-
-### `GET /graph-data`
-
-الحصول على بيانات الرسم الشبكي.
 
 **Response**:
 ```json
 {
-  "nodes": array,
-  "links": array,
-  "stats": {
-    "total_ips": number,
-    "total_devices": number,
-    "total_docs": number,
-    "total_fraud_cases": number
-  }
+  "status": "registered"
 }
 ```
 
 ---
 
-## 🧪 الاختبار
+### `GET /graph-data`
 
-راجع ملف `TEST_SCENARIOS.md` لسيناريوهات اختبار شاملة.
+Retrieve graph visualization data.
 
-### مثال سريع:
-
-```python
-# سيناريو: جهاز جديد + قفزة موقع + خدمة حساسة
-request = {
-    "device_is_known": False,
-    "location_change_km": 800,
-    "hour_of_day": 3,
-    "ops_last_24h": 12,
-    "is_sensitive_service": True,
-    "session_sequence": ["login", "renew_id", "upload_doc"]
+**Response**:
+```json
+{
+  "nodes": [
+    {"id": "string", "label": "string", "type": "ip|device|doc"}
+  ],
+  "links": [
+    {"source": "string", "target": "string"}
+  ]
 }
-
-# النتيجة المتوقعة: total_risk >= 60 (ALERT أو أعلى)
 ```
 
 ---
 
-## 📚 الوثائق الإضافية
+## 🧪 Testing
 
-- **[LAYERS_DETAILED_EXPLANATION.md](./LAYERS_DETAILED_EXPLANATION.md)**: شرح تفصيلي لكل طبقة مع أمثلة
-- **[TECHNICAL_REVIEW.md](./TECHNICAL_REVIEW.md)**: مراجعة تقنية شاملة
-- **[TECHNICAL_HIGHLIGHTS.md](./TECHNICAL_HIGHLIGHTS.md)**: نقاط قوة تقنية
-- **[TEST_SCENARIOS.md](./TEST_SCENARIOS.md)**: سيناريوهات اختبار
+### Manual Testing via UI
 
----
+1. Navigate to "Dashboard" tab
+2. Click "Manual Test Panel" (expand form)
+3. Input test scenarios:
+   - Normal user: low risk values
+   - Suspicious: new device + location change
+   - Bot attack: repeated logins + fast execution
+4. Click "Evaluate" and review results
 
-## 🎯 القرارات (Decisions)
+### Example Test Scenarios
 
-| النطاق | القرار | الوصف |
-|--------|--------|-------|
-| 0-30 | ALLOW | السماح بالمعاملة |
-| 31-60 | ALERT | تنبيه للمراقبة |
-| 61-80 | CHALLENGE | طلب تحقق إضافي |
-| 81-100 | BLOCK_REVIEW | حظر وتحويل للمراجعة |
+**Low Risk**:
+```json
+{
+  "device_is_known": true,
+  "location_change_km": 10,
+  "hour_of_day": 14,
+  "session_sequence": ["login", "home", "logout"]
+}
+// Expected: ALLOW (risk < 30)
+```
 
----
-
-## 🔒 الأمان
-
-### ملاحظات مهمة:
-
-- ⚠️ **CORS**: مفتوح حالياً للتطوير (`*`). يجب تقييده في الإنتاج
-- ⚠️ **البيانات**: حالياً في الذاكرة. يجب استخدام قاعدة بيانات في الإنتاج
-- ⚠️ **التحقق**: يجب إضافة input validation في الإنتاج
-- ⚠️ **المصادقة**: يجب إضافة نظام مصادقة في الإنتاج
-
----
-
-## 🚧 التطوير المستقبلي
-
-- [ ] إضافة قاعدة بيانات (PostgreSQL/MongoDB)
-- [ ] نظام مصادقة وتفويض
-- [ ] Input validation شامل
-- [ ] Logging وMonitoring
-- [ ] Unit tests وIntegration tests
-- [ ] CI/CD pipeline
-- [ ] Docker containerization
-- [ ] Real-time alerts system
+**High Risk**:
+```json
+{
+  "device_is_known": false,
+  "location_change_km": 900,
+  "hour_of_day": 3,
+  "session_sequence": ["login", "login", "renew_passport", "payment"]
+}
+// Expected: BLOCK (risk > 80)
+```
 
 ---
 
-## 👥 المساهمة
+## 🔒 MVP Limitations & Security
 
-نرحب بالمساهمات! يرجى:
+### Current Limitations
 
-1. Fork المشروع
-2. إنشاء branch للميزة (`git checkout -b feature/AmazingFeature`)
-3. Commit التغييرات (`git commit -m 'Add some AmazingFeature'`)
-4. Push إلى Branch (`git push origin feature/AmazingFeature`)
-5. فتح Pull Request
+This is a **hackathon MVP** with the following limitations:
+
+#### Data & Training
+- ⚠️ **Synthetic Training Data**: Models trained on generated data, not real fraud cases
+- ⚠️ **In-Memory Storage**: No persistent database (data lost on restart)
+- ⚠️ **Limited Dataset**: Only 4,000 training samples
+
+#### Security
+- ⚠️ **CORS Open**: Allows all origins (`*`) - must restrict in production
+- ⚠️ **No Authentication**: No user authentication or API keys
+- ⚠️ **No Rate Limiting**: Vulnerable to DoS attacks
+- ⚠️ **Minimal Input Validation**: Trusts client inputs
+
+#### Scalability
+- ⚠️ **Single-threaded**: Flask development server (not production-ready)
+- ⚠️ **No Caching**: Recalculates everything on each request
+- ⚠️ **No Load Balancing**: Cannot handle high traffic
+
+### Production Requirements
+
+To make this production-ready, you would need:
+
+✅ **Data Layer**
+- Train on real historical fraud data (10,000+ cases)
+- Implement PostgreSQL/MongoDB for persistence
+- Add data encryption at rest and in transit
+
+✅ **Security Layer**
+- JWT authentication with role-based access control
+- Rate limiting (e.g., 100 requests/minute per user)
+- Input validation and sanitization
+- HTTPS only with proper certificates
+- API key management
+
+✅ **Infrastructure**
+- Deploy with Gunicorn/uWSGI (not Flask dev server)
+- Add Redis for caching and session management
+- Implement load balancing (nginx/HAProxy)
+- Set up monitoring (Prometheus/Grafana)
+- Add structured logging (ELK stack)
+
+✅ **ML Operations**
+- Continuous model retraining pipeline
+- A/B testing for model improvements
+- Feature store for consistent feature engineering
+- Model versioning and rollback capability
+
+✅ **Testing & QA**
+- Comprehensive unit tests (>80% coverage)
+- Integration tests for all API endpoints
+- Performance testing under load
+- Security penetration testing
 
 ---
 
-## 📄 الترخيص
+## 🚧 Future Development Roadmap
 
-هذا المشروع مرخص تحت [MIT License](LICENSE).
+### Phase 1: Production Hardening
+- [ ] Database integration (PostgreSQL)
+- [ ] Authentication & authorization (JWT)
+- [ ] Rate limiting and security headers
+- [ ] Comprehensive input validation
+- [ ] Production-grade server (Gunicorn)
 
+### Phase 2: Enhanced ML
+- [ ] Train on real fraud data
+- [ ] Add more sophisticated features
+- [ ] Implement model retraining pipeline
+- [ ] Add model explainability (SHAP values)
+- [ ] A/B testing framework
+
+### Phase 3: Advanced Features
+- [ ] Real-time alert system
+- [ ] Admin dashboard for case management
+- [ ] Historical trend analysis
+- [ ] Fraud analyst tools
+- [ ] Automated case triage
+
+### Phase 4: Enterprise Scale
+- [ ] Microservices architecture
+- [ ] Kubernetes deployment
+- [ ] Multi-region support
+- [ ] 99.99% uptime SLA
+- [ ] SOC 2 compliance
 
 ---
 
-**Made with ❤️ for secure platforms**
+## 👥 Contributing
 
+This is an open-source hackathon project. Contributions are welcome!
+
+### How to Contribute
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Areas Needing Help
+
+- 🐛 **Bug Fixes**: Report or fix issues
+- 📖 **Documentation**: Improve guides and examples
+- 🧪 **Testing**: Add unit/integration tests
+- 🎨 **UI/UX**: Enhance frontend design
+- 🤖 **ML Models**: Improve model accuracy
+- 🔒 **Security**: Identify and fix vulnerabilities
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**MIT License Summary**: You can use, modify, and distribute this code freely, even for commercial purposes. Just include the original license and copyright notice.
+
+---
+
+## 🙏 Acknowledgments
+
+- Built as a hackathon project to demonstrate innovative fraud detection techniques
+- Inspired by real-world fraud detection systems from Stripe, PayPal, and Square
+- Research based on industry best practices from Akamai, F5 Labs, and Imperva
+- Designed for Saudi Arabian government platforms (Absher concept)
+- Special thanks to the open-source community for amazing tools and libraries
+
+---
+
+## 📧 Contact & Support
+
+### Questions?
+- Open an issue on GitHub for bug reports or feature requests
+- Check existing issues before creating a new one
+
+### Hackathon Judges
+This project demonstrates:
+- ✅ Novel 4-layer architecture for fraud detection
+- ✅ Real ML implementation (not mock data)
+- ✅ Graph-based intelligence for fraud networks
+- ✅ Practical application to government services
+- ✅ Clean, well-documented code
+- ✅ Interactive visualization of complex data
+
+---
+
+## ⚠️ Disclaimer
+
+This is a proof-of-concept developed for educational and demonstration purposes as part of a hackathon. It is **not affiliated with** the official Absher platform or the Saudi Arabian government. 
+
+**Do not use in production** without significant security hardening, real data validation, and proper testing.
+
+---
+
+**Made with ❤️ for secure government platforms**
+
+*Absher Raqeeb AI - Demonstrating the future of intelligent fraud detection*
