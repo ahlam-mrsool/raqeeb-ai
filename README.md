@@ -649,4 +649,4 @@ This is a proof-of-concept developed for educational and demonstration purposes 
 
 **Made with ❤️ for secure government platforms**
 
-*Absher Raqeeb AI - Demonstrating the future of intelligent fraud detection*
+⭐ Star this repository if you find it helpful!
